@@ -50,7 +50,7 @@ make_project_templates <- function(full = T, shiny = FALSE, location = here::her
 
   # Add a Default report
   if(add_report){
-    fs::file_copy(path = system.file("rmarkdown/templates/ea_report/skeleton/skeleton.Rmd",
+    fs::file_copy(path = system.file("rmarkdown/templates/brand_report/skeleton/skeleton.Rmd",
                                      package = this_pkg()),
                   new_path = file.path(location, "report", "report.Rmd"), overwrite = T)
   }

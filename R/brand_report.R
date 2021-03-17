@@ -17,7 +17,7 @@
 #'     or \code{"client"}
 #' @param ... any additional parameters to pass to \code{html_document2}
 #' @export
-ea_report <- function(toc = TRUE,
+brand_report <- function(toc = TRUE,
                       toc_float = TRUE,
                       df_print = "paged",
                       highlight = "tango",

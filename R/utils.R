@@ -1,6 +1,6 @@
 # Retrieve Access to files in the package
 pkg_resource <- function(...){
-  system.file( ..., package = 'eatemplates', mustWork = TRUE)
+  system.file( ..., package = 'TeamTemplates', mustWork = TRUE)
 }
 
 #' Suppress all messages and warnings
@@ -116,7 +116,7 @@ get_output_format <- function() {
 #' @export
 
 set_knitr_chunk_options <- function(){
-  if(get_output_format()=="eatemplates::ea_report"){
+  if(get_output_format()=="TeamTemplates::team_report"){
     knitr::opts_chunk$set(echo = FALSE,
                           message = FALSE, warning = FALSE, fig.align = 'center')
   }
@@ -126,6 +126,6 @@ set_knitr_chunk_options <- function(){
 
 # set name of package for calling template
 
-this_pkg <- function(){"eatemplates"}
+this_pkg <- function(){"TeamTemplates"}
 
-pkg_unqo <- function(){eatemplates}
+pkg_unqo <- function(){TeamTemplates}

@@ -7,8 +7,8 @@
 #'@export
 write_ea_report_footer <- function(location = NULL, author_email = rmarkdown::metadata$email, author_name = NULL){
 
-  logo_location <- system.file("logos/ea_logo_big.png",
-                               package = "eastyle")
+  logo_location <- system.file("logos/tanger_logo.png",
+                               package = "TeamBrand")
 
   if(is.null(author_name)){
 
@@ -17,7 +17,7 @@ write_ea_report_footer <- function(location = NULL, author_email = rmarkdown::me
       footer_text <- glue::glue('
 &nbsp;
 <hr />
-<p style="text-align: center;">A work by Cone Health Enterprise Analytics</a></p>
+<p style="text-align: center;">A work by Enterprise Analytics</a></p>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <p style="text-align: center;">
 <img src="{logo_location}" alt="logo" class="center" style="width:30%">
@@ -32,7 +32,7 @@ write_ea_report_footer <- function(location = NULL, author_email = rmarkdown::me
       footer_text <- glue::glue('
 &nbsp;
 <hr />
-<p style="text-align: center;">A work by Cone Health Enterprise Analytics</a></p>
+<p style="text-align: center;">A work by Enterprise Analytics</a></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>Analyst: {author_email}</em></span></p>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <p style="text-align: center;">
@@ -49,7 +49,7 @@ write_ea_report_footer <- function(location = NULL, author_email = rmarkdown::me
         footer_text <- glue::glue('
 &nbsp;
 <hr />
-<p style="text-align: center;">A work by Cone Health Enterprise Analytics</a></p>
+<p style="text-align: center;">A work by Enterprise Analytics</a></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>Prepared by: {author_formatted}</em></span></p>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <p style="text-align: center;">
@@ -65,7 +65,7 @@ write_ea_report_footer <- function(location = NULL, author_email = rmarkdown::me
         footer_text <- glue::glue('
 &nbsp;
 <hr />
-<p style="text-align: center;">A work by Cone Health Enterprise Analytics</a></p>
+<p style="text-align: center;">A work by Enterprise Analytics</a></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>Prepared by: {author_formatted}</em></span></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>Contact: {author_email}</em></span></p>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

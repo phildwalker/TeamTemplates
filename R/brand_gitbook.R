@@ -14,7 +14,7 @@
 #' @param draft if "DRAFT" is to be printed
 #' @param ... any additional parameters to pass to \code{html_document2}
 #' @export
-ea_gitbook <- function(toc = TRUE,
+brand_gitbook <- function(toc = TRUE,
                       toc_float = TRUE,
                       df_print = "paged",
                       highlight = "tango",
@@ -34,15 +34,15 @@ ea_gitbook <- function(toc = TRUE,
 
   # get the locations of resource files located within the package
   css <- tempdir()
-  eastyle::apply_cone_css(css_style = "report", location = css)
+  TeamBrand::apply_cone_css(css_style = "report", location = css)
   css <- file.path(css, "styles.css")
 
-  before_body_material <- readLines(system.file("rmarkdown/templates/ea_report/resources/ea_header.html",
-                                                package = "eatemplates"))
+  before_body_material <- readLines(system.file("rmarkdown/templates/brand_report/resources/ea_header.html",
+                                                package = "TeamTemplates"))
 
   # Has the logo icon
-  in_header<- system.file("rmarkdown/templates/ea_report/resources/in_header.html",
-                          package = "eatemplates")
+  in_header<- system.file("rmarkdown/templates/brand_report/resources/in_header.html",
+                          package = "TeamTemplates")
 
   before_body <- tempfile(fileext = ".html")
 
