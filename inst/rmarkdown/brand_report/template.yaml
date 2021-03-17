@@ -1,0 +1,5 @@
+name: Enterprise Analytics Report
+description: >
+ Template for creating a report for Enterprise Analytics
+create_dir: false
+

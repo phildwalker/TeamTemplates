@@ -1,0 +1,17 @@
+- title: "Executive Summary"
+  img: images/exec_summary2.png
+  href: ./ExecutiveSummary.html
+  showcase: false
+- title: "Population"
+  img: images/population2.png
+  href: ./Overview_ServiceArea_SVI.html
+  showcase: true
+- title: "Patients"
+  img: images/patients2.png
+  href: ./Overview_ConePopulation.html
+  showcase: true
+- title: "Employees"
+  img: images/employees2.png
+  href: ./Overview_EmpPop.html 
+  showcase: true
+

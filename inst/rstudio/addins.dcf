@@ -1,0 +1,24 @@
+Name: Insert EA Map Template
+Description: Inserts an EA map template code chunk
+Binding: add_ea_map
+Interactive: false
+
+Name: Insert EA Report Summary
+Description: Adds the default summary block for EA Reports
+Binding: add_summary_block
+Interactive: false
+
+Name: Insert EDW Connection String
+Description: Adds connection string code chunk
+Binding: add_connection_string
+Interactive: false
+
+Name: Internal to Client Converter
+Description: Converts Internal EA Reports to Client Versions
+Binding: addin_internal_to_client
+Interactive: true
+
+Name: Publishing to the Knowledge Repository
+Description: Moves the Distill Html for the Knowledge Repository
+Binding: addin_publish_to_ah
+Interactive: true
