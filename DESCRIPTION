@@ -1,0 +1,50 @@
+Package: TeamTemplates
+Title: Providing Templates for Enterprise Analytics Reports and Analysis
+Version: 0.0.1
+Authors@R: c(
+           person(given = "Philip",
+           family = "Walker",
+           role = c("aut", "cre"),
+           email = "philip.walker@conehealth.com")
+    )
+Description: This package provides templates for analysis and documents 
+    for an Enterprise Analytics Department. This includes templates
+    for R Markdown, presentations, and color schemes. These are mostly
+    consistent with org visual standards.
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+Depends:
+  R (>= 3.5)
+Imports: 
+    fs,
+    rmarkdown,
+    xfun,
+    glue,
+    distill,
+    bookdown,
+    pagedown,
+    magrittr,
+    dplyr,
+    eastyle,
+    here,
+    knitr,
+    lazyeval,
+    purrr,
+    readr,
+    scales,
+    stringr
+Remotes:
+    phildwalker/TeamBrand
+RoxygenNote: 7.1.1
+Suggests: 
+    crayon,
+    miniUI,
+    rstudioapi,
+    shiny,
+    shinyFiles,
+    usethis,
+    xaringan,
+    eadb,
+    eageo,
+    crosstalk

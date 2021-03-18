@@ -4,6 +4,6 @@
 
   knitr::knit_hooks$set(inline = clean_numbers,
                         dropdown = knit_dropdown,
-                        chunk = ea_hooks)
+                        chunk = brand_hooks)
 
 }

@@ -16,20 +16,23 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of TeamTemplates is to ...
+The goal of TeamTemplates is to help provide some framework to quickly get to a to a useful analysis.  
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+Currently providing templates for a single page analysis and another for a simple rmarkdown website.  
 
-```{r cars}
-summary(cars)
+# Installation
+
+```r
+remotes::install_github("phildwalker/Templates")
 ```
+
+
+
+# Notes
 
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
 
-You can also embed plots, for example:
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
+# Thanks!
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
+Huge thank you to Michael DeWitt and Jennifer Wenner from whom I learned a ton from at Cone.

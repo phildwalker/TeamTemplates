@@ -102,7 +102,7 @@ file_opened <- function(path) {
 # Test the output format
 
 get_output_format <- function() {
-  output <- rmarkdown:::parse_yaml_front_matter(
+  output <- rmarkdown::parse_yaml_front_matter(
     readLines(knitr::current_input())
   )$output
   if (is.list(output)){
